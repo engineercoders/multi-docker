@@ -18,7 +18,7 @@ after_success:
  # log in to the docker CLI
  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
- # Take those images and push them to docker
+ # Take those images and push
  - docker push reggieh08/multi-client
  - docker push reggieh08/multi-nginx
  - docker push reggieh08/multi-server
