@@ -1,5 +1,6 @@
-language: generic 
 sudo: required
+language: generic 
+
 services:
  - docker
 
@@ -24,7 +25,6 @@ after_success:
  - docker push reggieh08/multi-worker
 
 deploy:
-  edge: true
   provider: elasticbeanstalk
   region: 'us-west-2'
   app: 'multi-docker'
